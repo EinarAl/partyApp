@@ -1,0 +1,7 @@
+{
+  "name": "PartySupplApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Audio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item class="filterDropdown">
+    <ion-label>Filter</ion-label>
+    <ion-select interface="popover">
+      <ion-select-option value="nearMe">Near Me</ion-select-option>
+      <ion-select-option value="bestRater">Best Rated</ion-select-option>
+      <ion-select-option value="bestSelling">Best Selling</ion-select-option>
+      <ion-select-option value="lowToHigh">Low to High</ion-select-option>
+      <ion-select-option value="highToLow">High to Low</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <div class="categoriesSpace">
+    <ion-card class="recommendCard">
+      <img class="categoryCardImg" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
+      <img class="categoryCardImg categoryCardImgR" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
+      <div class="catInfoSpace">
+        <div class="catCardSubtitle">Audio</div>
+        <div [routerLink]="['/tabs/tab3']" class="catCardTitle">Dj Yonder</div>
+        <div class="catCardRating">
+        4.6* 300+ ratings
+        </div>
+      </div>
+    </ion-card>
+    <ion-card class="recommendCard">
+      <img class="categoryCardImg" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
+      <img class="categoryCardImg categoryCardImgR" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
+      <div class="catInfoSpace">
+        <div class="catCardSubtitle">Audio</div>
+        <div class="catCardTitle">Skrillex</div>
+        <div class="catCardRating">
+        5.0* 1,200+ ratings
+        </div>
+      </div>
+    </ion-card>
+    <ion-card class="recommendCard">
+      <img class="categoryCardImg" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
+      <img class="categoryCardImg categoryCardImgR" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
+      <div class="catInfoSpace">
+        <div class="catCardSubtitle">Audio</div>
+        <div class="catCardTitle">Batushka</div>
+        <div class="catCardRating">
+        5.0* 200+ ratings
+        </div>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

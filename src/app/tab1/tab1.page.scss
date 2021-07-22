@@ -1,0 +1,55 @@
+.categoryCard {
+    height: 75px;
+    width: 20%;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+}
+.cardImg {
+    height: 45px;
+    width: 55%;
+    display: inline-block;
+}
+.cardTxt {
+    font-size: 10px;
+    color: #000000;
+    display: block;
+    font-weight: 400;
+    margin-top: 7px;
+}
+.space {
+    text-align: center;
+    margin-top: 5px;
+}
+.recommendHeader{
+    margin-left: 6%;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 700;
+}
+.recommendCard {
+    height: 90px;
+    width: 40%;
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2px;
+}
+.categoriesSpace {
+    text-align: center;
+    margin-top: 5px;
+}
+.recommendCardSmal {
+    height: 70px;
+    width: 27%;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 3px;
+}
+.categorySpaceSmal {
+    text-align: center;
+    margin-top: 5px;
+}

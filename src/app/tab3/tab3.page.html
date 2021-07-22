@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      DJ Yonder
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- <div class="profileCardSpace"> -->
+    <ion-card class="profileCard">
+      <div class="profileTitle">DJ Yonder</div>
+      <div class="profileSubTitle">By: Fortnite dude</div>
+      <img class="profileImg" src="https://images7.alphacoders.com/953/953237.png"/>
+    </ion-card>
+  <!-- </div> -->
+  <div class="buttonSpace">
+    <button [routerLink]="['/messages']" class="profileButton" type="button">Message</button>
+    <button class="profileButton proButtonRight" type="button">Purchase</button>
+    <button class="profileButton proButtonRight" type="button">Save</button>
+  </div>
+  <div class="profileDescr">
+    <div class="descrLocation">Location: Tomato Town</div>
+    <div class="descrDescr"> I am DJ Yonder, i have sick beats and have been in the industry for blah blah blah</div>
+  </div>
+</ion-content>
