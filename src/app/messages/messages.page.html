@@ -9,23 +9,27 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor = "let blog of blogs">
-      <ion-label>
-        <p class="msgText">{{blog}}</p>
-      </ion-label>
-    </ion-item>
-  </ion-list>
-  <div id="txtSpace">
+  <ion-grid>
+    <ion-row>
+    <ion-list>
+      <ion-item *ngFor = "let blog of blogs">
+       <ion-label>
+         <p class="msgText">{{blog}}</p>
+       </ion-label>
+     </ion-item>
+    </ion-list>
+    </ion-row>
+  </ion-grid>
+  <!-- <div id="txtSpace"> -->
     <ion-item class="txtBar">
       <!-- <ion-label position="stacked">Textarea</ion-label> -->
       <ion-textarea [(ngModel)] = "currentInput" placeholder="placeholder"></ion-textarea>
     </ion-item>
   
-    <button class="txtSendButton" expand="full" color="secondary" (click) = "addBlog()">Add Blog</button>
+    <button class="txtSendButton" expand="full" color="secondary" (click) = "addBlog()">Send</button>
     <!-- <form>
       <input [(ngModel)] = "currentInput" placeholder="placeholder" class="txtBar" type="text">
     </form> -->
     <!-- <button (click) = "addBlog()" class="txtSendButton" type="submit">Send</button> -->
-  </div>
+  <!-- </div> -->
 </ion-content>
