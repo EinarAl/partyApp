@@ -1,8 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button auto-hide="false"></ion-menu-button>
-    </ion-buttons>
+      <ion-back-button defaultHref="/signinpage"></ion-back-button>
+      </ion-buttons>
     <ion-title>
       (appName)
     </ion-title>
@@ -28,7 +28,7 @@
       Best Selling
     </div>
   <div class="categoriesSpace">
-    <ion-card class="recommendCard">
+    <ion-card [routerLink]="['/tabs/tab3']" class="recommendCard">
       <img src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
     </ion-card>
     <ion-card class="recommendCard">

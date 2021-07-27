@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-title>signinpage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="CSI">
+    <h2>Customer Sign In</h2>
+    <p style=" font-size:13px">Fill in to schedule appointment</p>
+    <form>
+      <label for="firstnme">Name:</label>
+      <input type="text" id="firstnme" name="firstname" maxlength="15" required>
+      <label for="phonenumba">Mobile Phone:</label>
+      <input type="tel" id="phonenumba" name="phonenumber" placeholder="###-###-####" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" minlength="10" maxlength="10" required>
+      <input [routerLink]="['/tabs/tab1']" type="Submit" class="button">
+    </form>
+  </div>
+</ion-content>
