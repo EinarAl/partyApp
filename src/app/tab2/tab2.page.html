@@ -1,58 +1,30 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-    <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+      <ion-back-button defaultHref="/tabs/tab3"></ion-back-button>
     </ion-buttons>
-    <ion-title>
-      Audio
-    </ion-title>
+    <ion-icon class="msgIcon" name="chatbubbles-outline"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-item class="filterDropdown">
-    <ion-label>Filter</ion-label>
-    <ion-select interface="popover">
-      <ion-select-option value="nearMe">Near Me</ion-select-option>
-      <ion-select-option value="bestRater">Best Rated</ion-select-option>
-      <ion-select-option value="bestSelling">Best Selling</ion-select-option>
-      <ion-select-option value="lowToHigh">Low to High</ion-select-option>
-      <ion-select-option value="highToLow">High to Low</ion-select-option>
-    </ion-select>
-  </ion-item>
-  <div class="categoriesSpace">
-    <ion-card class="recommendCard">
-      <img class="categoryCardImg" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
-      <img class="categoryCardImg categoryCardImgR" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
-      <div class="catInfoSpace">
-        <div class="catCardSubtitle">Audio</div>
-        <div [routerLink]="['/tabs/tab3']" class="catCardTitle">Dj Yonder</div>
-        <div class="catCardRating">
-        4.6* 300+ ratings
-        </div>
-      </div>
-    </ion-card>
-    <ion-card class="recommendCard">
-      <img class="categoryCardImg" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
-      <img class="categoryCardImg categoryCardImgR" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
-      <div class="catInfoSpace">
-        <div class="catCardSubtitle">Audio</div>
-        <div class="catCardTitle">Skrillex</div>
-        <div class="catCardRating">
-        5.0* 1,200+ ratings
-        </div>
-      </div>
-    </ion-card>
-    <ion-card class="recommendCard">
-      <img class="categoryCardImg" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
-      <img class="categoryCardImg categoryCardImgR" src="https://www.bhphotovideo.com/images/images500x500/Savage_58_12_107_x_12yds_Background_45551.jpg" />
-      <div class="catInfoSpace">
-        <div class="catCardSubtitle">Audio</div>
-        <div class="catCardTitle">Batushka</div>
-        <div class="catCardRating">
-        5.0* 200+ ratings
-        </div>
-      </div>
-    </ion-card>
-  </div>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+    <ion-list>
+      <ion-item class="txtBubbles" *ngFor = "let blog of blogs">
+       <ion-label>
+         <p class="msgText">{{blog}}</p>
+       </ion-label>
+     </ion-item>
+    </ion-list>
+    </ion-row>
+  </ion-grid>
+    <div class="txtBar">
+      <button class="txtSendButtonL" expand="full" color="secondary"><ion-icon name="image-outline"></ion-icon></button>
+      <button class="txtSendButtonLT" expand="full" color="secondary"><ion-icon name="camera-outline"></ion-icon></button>
+      <ion-item class="txtInput">
+        <ion-textarea [(ngModel)] = "currentInput"></ion-textarea>
+      </ion-item>
+      <button class="txtSendButton" expand="full" color="secondary" (click) = "addBlog()"><ion-icon name="chevron-up-outline"></ion-icon></button>
+    </div>
 </ion-content>

@@ -1,51 +1,60 @@
-.filterDropdown {
-    border-radius: 12px;
-    width: 29%;
-    height: 45px;
-    font-size: 15px;
-    margin-top: 30px;
-    margin-left: 65%;
+.msgIcon {
+    height: 35px;
+    width: 35%;
+    margin-left: 23%;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
-.recommendCard {
-    height: 200px;
-    width: 90%;
+.txtBar {
+    margin-top: 150%;
+    height: 53px;
+    width: 93%;
+    margin-left: 5%;
+    border-radius: 12px;
     display: inline-block;
-    margin-bottom: 3px;
-    margin-top: 6px;
-    border-radius: 12px;
+    background-color: #eaeaea;
 }
-.categoriesSpace {
-    text-align: center;
-    margin-top: 5px;
-}
-.categoryCardImg {
-    height: 90px;
-    width: 40%;
+.txtSendButton {
+    height: 50px;
+    width: 15%;
+    margin-left: 6%;
+    border-radius: 30px;
     display: inline-block;
-    margin-top: 20px;
+    background-color: #EF5659;
+    position: absolute;
+}
+.txtSendButtonL {
+    height: 50px;
+    width: 15%;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: #EF5659;
+}
+.txtSendButtonLT {
+    height: 50px;
+    width: 15%;
+    border-radius: 30px;
+    display: inline-block;
+    margin-left: 1%;
+    background-color: #EF5659;
+}
+.txtInput {
+    width: 47%;
+    height: 50px;
+    display: inline-block;
+    --background: #eaeaea;
+    color: #7a7a7a;
+}
+.msgText {
+    color: #7a7a7a;
+}
+.txtBubbles {
+    --background: #eaeaea;
     border-radius: 12px;
 }
-.categoryCardImgR {
-    margin-left: 10%;
-}
-.catInfoSpace {
- text-align: left;
- margin-top: 7px;
-}
-.catCardSubtitle {
-    font-size: 15px;
-    font-weight: 550;
-    margin-left: 5%;
-}
-.catCardTitle {
-    font-size: 20px;
-    font-weight: 700;
-    margin-left: 5%;
-    margin-top: 3px;
-}
-.catCardRating {
-    font-size: 15px;
-    font-weight: 400;
-    margin-left: 5%;
-    margin-top: 3px;
+ion-toolbar {
+    --background: #EF5659;
+    height: 117px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }

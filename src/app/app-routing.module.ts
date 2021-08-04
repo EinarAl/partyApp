@@ -13,6 +13,14 @@ const routes: Routes = [
   {
     path: 'signinpage',
     loadChildren: () => import('./signinpage/signinpage.module').then( m => m.SigninpagePageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'set-date-booking',
+    loadChildren: () => import('./set-date-booking/set-date-booking.module').then( m => m.SetDateBookingPageModule)
   }
 ];
 @NgModule({

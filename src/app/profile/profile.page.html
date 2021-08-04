@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="pfpTitle">My Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<img class="pfpImg" src="https://ca.slack-edge.com/T17R4TFAM-UAWTTCU91-5e1762198575-512"/>
+<button class="pfpEdit">Edit Profile</button>
+<div class="pfpInfoSpace">User Name: <div class="pfpInfoDisplay">Party Zurick</div></div>
+<div class="pfpInfoSpace">Name/Last Name: <div class="pfpInfoDisplay">Zurick Miranda</div></div>
+<div class="pfpInfoSpace">Phone Number: <div class="pfpInfoDisplay">555-555-5555</div></div>
+<div class="pfpInfoSpace">Email: <div class="pfpInfoDisplay">notrealemail@nomail.com</div></div>
+<div class="pfpInfoSpace">Current Payment Method: <div class="pfpInfoDisplay">Ends in-*0000</div></div>
+<div class="pfpInfoSpace">Current Address: <div class="pfpInfoDisplay">Orange County, Cheese St, 5555</div></div>
+<button class="pfpSwitch">Switch Profile</button>
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button [routerLink]="['/tabs/tab2']">
+      <ion-icon name="triangle"></ion-icon>
+      <ion-label>Messages</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/tabs/tab1']">
+      <ion-icon name="ellipse"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Checkout">
+      <ion-icon name="square"></ion-icon>
+      <ion-label>Checkout</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>
+</ion-content>

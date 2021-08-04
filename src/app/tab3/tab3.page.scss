@@ -4,15 +4,16 @@
     margin-left: 5%;
 }
 .profileTitle {
-    margin-top: 5%;
-    margin-left: 6%;
     font-size: 20px;
     font-weight: 700;
 }
-.profileSubTitle {
-    margin-left: 6%;
+.priceTitle {
     font-size: 15px;
     font-weight: 400;
+}
+.price {
+    font-size: 20px;
+    font-weight: 700;
 }
 .profileImg {
     width: 90%;
@@ -22,26 +23,48 @@
     border-radius: 12px;
 }
 .profileButton {
-    height: 60px;
-    width: 28%;
+    margin-top: 350px;
+    height: 55px;
+    width: 45%;
     margin-left: 5%;
     border-radius: 12px;
     font-size: 17px;
+    background-color: #f0f0f0;
+    color: #505050;
 }
 .proButtonRight {
     margin-left: 3%;
+    background-color: #EF5659;
+    color: #ffffff;
 }
-.profileDescr {
+.profileDescrL {
     color: black;
     margin-left: 6%;
     margin-top: 10px;
+    display: inline-block;
+}
+.profileDescrR {
+    color: black;
+    margin-left: 30%;
+    margin-top: 10px;
+    display: inline-block;
 }
 .descrLocation {
-    font-size: 25px;
-    font-weight: 500;
-}
-.descrDescr {
+    margin-top: 3px;
     font-size: 15px;
     font-weight: 400;
-    margin-top: 5px;
+}
+.descrDescr {
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 6%;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #000000;
+}
+ion-toolbar {
+    --background: #EF5659;
+    height: 117px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
