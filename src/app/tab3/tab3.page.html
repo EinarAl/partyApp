@@ -1,22 +1,59 @@
-<ion-header [translucent]="true">
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/service-profile"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="title">
+      Book Now
+    </ion-title>
+    <button [routerLink]="['/profile']" class="toProfileButton"><ion-icon class="profileIcon" name="person-circle-outline"></ion-icon></button>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-buttons>
-    <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
-  </ion-buttons>
-  <img class="profileImg" src="https://images7.alphacoders.com/953/953237.png"/>
-  <div class="profileDescrL">
-    <div class="profileTitle">DJ Yonder</div>
-    <div class="descrLocation"><ion-icon name="location-outline"></ion-icon>Tomato Town</div>
+<ion-content>
+  <div class="fillInfo">Location</div>
+  <div class="fillBar">
+    <ion-item class="fillInput">
+      <ion-textarea></ion-textarea>
+    </ion-item>
   </div>
-  <div class="profileDescrR">
-    <div class="priceTitle">Price Per Hour</div>
-    <div class="price">$100</div>
+  
+  <div class="fillInfo">Time</div>
+  <div class="timeSpace">
+    <form>
+      <input class="fillTime" type="time"/>
+      <div class="fillTo">To</div>
+      <input class="fillTime" type="time"/>
+    </form>
+    <div class="calendar">
+      <div class="dateMonth"><ion-icon class="dateMonth" name="chevron-back-outline"></ion-icon>Feburary 2021<ion-icon class="dateMonth" name="chevron-forward-outline"></ion-icon></div>
+      <div class="weekDays">Sun Mon Tue Wed Thu Fru Sat</div>
+      <div class="dateNum">1</div>
+      <div class="dateNum">2</div>
+      <div class="dateNum">3</div>
+      <div class="dateNum">4</div>
+      <div class="dateNum">5</div>
+      <div class="dateNum">6</div>
+      <div class="dateNum">7</div>
+      <div class="dateNum">8</div>
+      <div class="dateNum">9</div>
+      <div class="dateNum">10</div>
+      <div class="dateNum highlighNum">12</div>
+      <div class="dateNum">13</div>
+      <div class="dateNum">14</div>
+      <div class="dateNum">15</div>
+      <div class="dateNum">16</div>
+      <div class="dateNum">17</div>
+      <div class="dateNum">18</div>
+      <div class="dateNum">19</div>
+      <div class="dateNum">20</div>
+      <div class="dateNum">21</div>
+      <div class="dateNum">22</div>
+      <div class="dateNum">23</div>
+      <div class="dateNum">24</div>
+      <div class="dateNum">25</div>
+      <div class="dateNum">26</div>
+      <div class="dateNum">27</div>
+      <div class="dateNum">28</div>
+    </div>
   </div>
-    <div class="descrDescr"> I am DJ Yonder, i have sick beats and have been in the industry for blah blah blah</div>
-  <div class="buttonSpace">
-    <button [routerLink]="['/tabs/tab2']" class="profileButton" type="button">Message</button>
-    <button class="profileButton proButtonRight" type="button">Book Now</button>
-  </div>
-</ion-content>

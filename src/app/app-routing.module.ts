@@ -7,10 +7,6 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'messages',
-    loadChildren: () => import('./messages/messages.module').then( m => m.MessagesPageModule)
-  },
-  {
     path: 'signinpage',
     loadChildren: () => import('./signinpage/signinpage.module').then( m => m.SigninpagePageModule)
   },

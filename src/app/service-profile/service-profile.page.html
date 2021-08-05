@@ -1,9 +1,42 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>serviceProfile</ion-title>
-  </ion-toolbar>
+<ion-header [translucent]="true">
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-buttons>
+    <ion-back-button defaultHref="/"></ion-back-button>
+  </ion-buttons>
+  <img class="profileImg" src="https://images7.alphacoders.com/953/953237.png"/>
+  <div class="profileDescrL">
+    <div class="profileTitle">DJ Yonder</div>
+    <div class="descrLocation"><ion-icon name="location-outline"></ion-icon>Tomato Town</div>
+  </div>
+  <div class="profileDescrR">
+    <div class="priceTitle">Price Per Hour</div>
+    <div class="price">$100</div>
+  </div>
+    <div class="descrDescr"> I am DJ Yonder, i have sick beats and have been in the industry for blah blah blah</div>
+  <div class="buttonSpace">
+    <button [routerLink]="['/tabs/tab2']" class="profileButton" type="button">Message</button>
+    <button [routerLink]="['/tabs/tab3']"class="profileButton proButtonRight" type="button">Book Now</button>
+  </div>
+  <!-- <ion-tabs>
 
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button [routerLink]="['/tabs/tab2']">
+      <ion-icon name="triangle"></ion-icon>
+      <ion-label>Messages</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button [routerLink]="['/tabs/tab1']">
+      <ion-icon name="ellipse"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Checkout">
+      <ion-icon name="square"></ion-icon>
+      <ion-label>Checkout</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs> -->
 </ion-content>
