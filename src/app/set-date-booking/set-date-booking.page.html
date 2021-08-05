@@ -1,9 +1,26 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>setDateBooking</ion-title>
+    <ion-title id="title">
+      Book Now
+    </ion-title>
+    <button [routerLink]="['/profile']" class="toProfileButton"><ion-icon class="profileIcon" name="person-circle-outline"></ion-icon></button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div class="fillInfo">Location</div>
+  <div class="fillBar">
+    <ion-item class="fillInput">
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </div>
+  
+  <div class="fillInfo">Time</div>
+  <div class="timeSpace">
+    <form>
+      <input class="fillTime" type="time"/>
+      <div class="fillTo">To</div>
+      <input class="fillTime" type="time"/>
+    </form>
+  </div>
 </ion-content>

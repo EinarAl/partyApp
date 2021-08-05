@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: 'set-date-booking',
     loadChildren: () => import('./set-date-booking/set-date-booking.module').then( m => m.SetDateBookingPageModule)
+  },
+  {
+    path: 'service-profile',
+    loadChildren: () => import('./service-profile/service-profile.module').then( m => m.ServiceProfilePageModule)
   }
 ];
 @NgModule({
