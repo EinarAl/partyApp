@@ -21,6 +21,18 @@ const routes: Routes = [
   {
     path: 'service-profile',
     loadChildren: () => import('./service-profile/service-profile.module').then( m => m.ServiceProfilePageModule)
+  },
+  {
+    path: 'messages',
+    loadChildren: () => import('./messages/messages.module').then( m => m.MessagesPageModule)
+  },
+  {
+    path: 'check-out',
+    loadChildren: () => import('./check-out/check-out.module').then( m => m.CheckOutPageModule)
+  },
+  {
+    path: 'order-review',
+    loadChildren: () => import('./order-review/order-review.module').then( m => m.OrderReviewPageModule)
   }
 ];
 @NgModule({

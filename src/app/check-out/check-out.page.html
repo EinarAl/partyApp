@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="title">
+      Check Out
+    </ion-title>
+    <button [routerLink]="['/profile']" class="toProfileButton"><ion-icon class="profileIcon" name="person-circle-outline"></ion-icon></button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="fillInfo">Billing Country/Region<div class="helpIcon"><ion-icon name="help-outline"></ion-icon></div></div>
+  <div class="pfpInfoDisplay">
+    <ion-item class="txtInput">
+      <ion-textarea placeholder="United States"></ion-textarea>
+    </ion-item>
+    <button class="txtSendButton"><ion-icon name="chevron-down-outline"></ion-icon></button></div>
+
+  <div class="choosePay">
+    <button class="choosePayBut"></button><div class="fillInfoS">Credit/Debit Card<ion-icon class="payIcons" name="card-outline"></ion-icon></div>
+    <button class="choosePayBut"></button><div class="fillInfoS">PayPal<ion-icon class="payIcons" name="logo-paypal"></ion-icon></div>
+  </div>
+
+  <div class="addCard">
+    <div class="fillInfo">Add Card</div>
+    <div class="fillInfo2">Card Number</div>
+    <div class="fillInfo2 left">Name</div>
+    <div class="lockInput">
+      <ion-item class="txtInputLock">
+        <ion-textarea></ion-textarea>
+      </ion-item>
+      <ion-icon class="lockIcon" name="lock-closed-outline"></ion-icon>
+    </div>
+    <div class="lockInput">
+      <ion-item class="txtInputLock">
+        <ion-textarea></ion-textarea>
+      </ion-item>
+      <ion-icon class="lockIcon" name="lock-closed-outline"></ion-icon>
+    </div>
+    <div class="fillInfo2">CCV</div>
+    <div class="fillInfo2 left2">Phone Number</div>
+    <div class="lockInput">
+      <ion-item class="txtInputLock">
+        <ion-textarea></ion-textarea>
+      </ion-item>
+      <ion-icon class="lockIcon" name="lock-closed-outline"></ion-icon>
+    </div>
+    <div class="lockInput">
+      <ion-item class="txtInputLock">
+        <ion-textarea></ion-textarea>
+      </ion-item>
+      <ion-icon class="lockIcon" name="lock-closed-outline"></ion-icon>
+    </div>
+    <div class="fillInfo2">Expiration Date</div>
+    <div class="lockInput">
+      <ion-item class="txtInputLock">
+        <ion-textarea placeholder="00|00|00"></ion-textarea>
+      </ion-item>
+      <ion-icon class="lockIcon" name="lock-closed-outline"></ion-icon>
+    </div>
+    <button [routerLink]="['/check-out']" class="confirmButton">Confirm</button>
+  </div>
+</ion-content>

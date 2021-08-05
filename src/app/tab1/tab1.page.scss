@@ -1,5 +1,5 @@
 ion-toolbar {
-    --background: #EF5659;
+    --background: #ff3011;
     height: 117px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -8,12 +8,14 @@ ion-toolbar {
     font-size: 25px;
     font-weight: 600;
     margin-top: 10px;
+    position: absolute;
 }
 #audioTitle {
     font-size: 25px;
     font-weight: 600;
     margin-top: 10px;
     display: none;
+    position: absolute;
 }
 .catHeader {
     color: #000000;
@@ -60,7 +62,7 @@ ion-toolbar {
 }
 .toProfileButton {
     margin-left: 80%;
-    background-color: #EF5659;
+    background-color: #ff3011;
     height: 40px;
     width: 13%;
     margin-top: 35px;
@@ -71,7 +73,7 @@ ion-toolbar {
     width: 100%;
 }
 #button1:active {
-    background-color: #EF5659;
+    background-color: #ff3011;
 }
 #audioRecommended {
     display: none;

@@ -1,5 +1,5 @@
 ion-toolbar {
-    --background: #EF5659;
+    --background: #ff3011;
     height: 117px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -11,7 +11,7 @@ ion-toolbar {
 }
 .toProfileButton {
     margin-left: 80%;
-    background-color: #EF5659;
+    background-color: #ff3011;
     height: 40px;
     width: 13%;
     margin-top: 35px;
@@ -22,7 +22,7 @@ ion-toolbar {
     width: 100%;
 }
 .fillInfo {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 6%;
     color: #676767;
     font-weight: 600;
@@ -62,7 +62,8 @@ ion-toolbar {
     display: inline-block;
 }
 .calendar {
-    border-style: 2px solid;
+    border: solid #000;
+    border-width: 0.5 0.5px;
     border-radius: 7px;
     text-align: center;
     margin-top: 40px;
@@ -79,14 +80,39 @@ ion-toolbar {
 .weekDays {
     margin-top: 20px;
     color: #aaaaaa;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%
 }
 .dateNum {
     color: #000000;
     font-size: 17px;
     font-weight: 600;
     margin-top: 20px;
-    margin-left: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
     display: inline-block;
+}
+.highlightNum {
+    background-color: transparent;
+}
+.highlightNum:active {
+    background-color: #ff3011;
+    height: 19px;
+    border-radius: 50px;
+}
+.dateNumMarginBot {
+    margin-bottom: 40px;
+}
+.confirmButton {
+    height: 65px;
+    width: 43%;
+    background: #ff3011;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 28.5%;
 }

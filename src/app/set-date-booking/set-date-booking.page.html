@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/service-profile"></ion-back-button>
+    </ion-buttons>
     <ion-title id="title">
       Book Now
     </ion-title>
@@ -16,40 +19,49 @@
   </div>
   
   <div class="fillInfo">Time</div>
+  <div class="timeSpace">
     <form>
       <input class="fillTime" type="time"/>
       <div class="fillTo">To</div>
       <input class="fillTime" type="time"/>
     </form>
-  <div class="calendar">
-    <div class="dateMonth"><ion-icon name="chevron-back-outline"></ion-icon>Feburary 2021<ion-icon name="chevron-forward-outline"></ion-icon></div>
-    <div class="weekDays">Sun Mon Tue Wed Thu Fru Sat</div>
-    <div class="dateNum">1</div>
-    <div class="dateNum">2</div>
-    <div class="dateNum">3</div>
-    <div class="dateNum">4</div>
-    <div class="dateNum">5</div>
-    <div class="dateNum">6</div>
-    <div class="dateNum">7</div>
-    <div class="dateNum">8</div>
-    <div class="dateNum">9</div>
-    <div class="dateNum">10</div>
-    <div class="dateNum highlighNum">12</div>
-    <div class="dateNum">13</div>
-    <div class="dateNum">14</div>
-    <div class="dateNum">15</div>
-    <div class="dateNum">16</div>
-    <div class="dateNum">17</div>
-    <div class="dateNum">18</div>
-    <div class="dateNum">19</div>
-    <div class="dateNum">20</div>
-    <div class="dateNum">21</div>
-    <div class="dateNum">22</div>
-    <div class="dateNum">23</div>
-    <div class="dateNum">24</div>
-    <div class="dateNum">25</div>
-    <div class="dateNum">26</div>
-    <div class="dateNum">27</div>
-    <div class="dateNum">28</div>
+    <div class="calendar">
+      <div class="dateMonth"><ion-icon class="dateMonth" name="chevron-back-outline"></ion-icon>Feburary 2021<ion-icon class="dateMonth" name="chevron-forward-outline"></ion-icon></div>
+      <div class="weekDays">Sun</div>
+      <div class="weekDays">Mon</div>
+      <div class="weekDays">Tue</div>
+      <div class="weekDays">Wed</div>
+      <div class="weekDays">Thu</div>
+      <div class="weekDays">Fri</div>
+      <div class="weekDays">Sat</div>
+      <div class="dateNum">1</div>
+      <div class="dateNum">2</div>
+      <div class="dateNum">3</div>
+      <div class="dateNum">4</div>
+      <div class="dateNum">5</div>
+      <div class="dateNum">6</div>
+      <div class="dateNum">7</div>
+      <div class="dateNum">8</div>
+      <div class="dateNum">9</div>
+      <div class="dateNum">10</div>
+      <button class="dateNum highlightNum">12</button>
+      <div class="dateNum">13</div>
+      <div class="dateNum">14</div>
+      <div class="dateNum">15</div>
+      <div class="dateNum">16</div>
+      <div class="dateNum">17</div>
+      <div class="dateNum">18</div>
+      <div class="dateNum">19</div>
+      <div class="dateNum">20</div>
+      <div class="dateNum">21</div>
+      <div class="dateNum">22</div>
+      <div class="dateNum">23</div>
+      <div class="dateNum">24</div>
+      <div class="dateNum">25</div>
+      <div class="dateNum">26</div>
+      <div class="dateNum">27</div>
+      <div class="dateNum dateNumMarginBot">28</div>
+    </div>
+
+    <button [routerLink]="['/check-out']" class="confirmButton">Confirm</button>
   </div>
-</ion-content>
