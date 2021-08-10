@@ -1,11 +1,20 @@
-<ion-header [translucent]="true">
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="title">
+      Photo Booth
+    </ion-title>
+    <button [routerLink]="['/profile']" class="toProfileButton"><ion-icon class="profileIcon" name="person-circle-outline"></ion-icon></button>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-buttons>
+<ion-content>
+  <!-- <ion-buttons>
     <ion-back-button defaultHref="/"></ion-back-button>
-  </ion-buttons>
-  <img class="profileImg" src="https://ae01.alicdn.com/kf/HTB1PZ3YcYGYBuNjy0Foq6AiBFXa3/FENGRISE-30th-40th-50th-60th-Photo-Booth-Frame-Happy-Birthday-Photobooth-Props-Baby-1st-Birthday-Party.jpg"/>
+  </ion-buttons> -->
+  <img class="profileImg" src="https://images.squarespace-cdn.com/content/v1/57bc877fc534a51bf90877bc/1500934065354-F88APZASA688PP9GF69A/booth+5.jpg"/>
   <div class="profileDescrL">
     <div class="profileTitle">Photo Booth</div>
     <div class="descrLocation"><ion-icon name="location-outline"></ion-icon>Tomato Town</div>
@@ -16,27 +25,8 @@
   </div>
     <div class="descrDescr"> I provide photobooths for your party! Get the best booths and best props! I have been in the industry for blah blah blah</div>
   <div class="buttonSpace">
-    <button [routerLink]="['/messages']" class="profileButton" type="button">Message</button>
-    <button [routerLink]="['/set-date-booking']"class="profileButton proButtonRight" type="button">Book Now</button>
-  </div>
-  <!-- <ion-tabs>
+    <button [routerLink]="['/direct-messages']" class="profileButton" type="button">Message</button>
+    <button [routerLink]="['/booked']" class="profileButton proButtonRight" type="button">Book Now</button>
+  </div> -->
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button [routerLink]="['/tabs/tab2']">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Messages</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button [routerLink]="['/tabs/tab1']">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Home</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="Checkout">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Checkout</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-
-</ion-tabs> -->
 </ion-content>

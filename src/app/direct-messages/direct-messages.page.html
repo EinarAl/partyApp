@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/service-profile"></ion-back-button>
+    </ion-buttons>
+    <ion-icon class="msgIcon" name="chatbubbles-outline"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+    <ion-list>
+      <ion-item class="txtBubbles" *ngFor = "let blog of blogs">
+       <ion-label>
+         <p class="msgText">{{blog}}</p>
+       </ion-label>
+     </ion-item>
+    </ion-list>
+    </ion-row>
+  </ion-grid>
+    <div class="txtBar">
+      <button class="txtSendButtonL" expand="full" color="secondary"><ion-icon name="image-outline"></ion-icon></button>
+      <button class="txtSendButtonLT" expand="full" color="secondary"><ion-icon name="camera-outline"></ion-icon></button>
+      <ion-item class="txtInput">
+        <ion-textarea [(ngModel)] = "currentInput"></ion-textarea>
+      </ion-item>
+      <button class="txtSendButton" expand="full" color="secondary" (click) = "addBlog()"><ion-icon name="chevron-up-outline"></ion-icon></button>
+    </div>
+</ion-content>

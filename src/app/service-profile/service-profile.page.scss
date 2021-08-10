@@ -1,3 +1,26 @@
+ion-toolbar {
+    --background: #ff3011;
+    height: 117px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.toProfileButton {
+    margin-left: 80%;
+    background-color: #ff3011;
+    height: 40px;
+    width: 13%;
+    margin-top: 35px;
+    text-align: center;
+}
+.profileIcon {
+    height: 100%;
+    width: 100%;
+}
 .profileCard {
     height: 270px;
     width: 90%;
@@ -23,7 +46,7 @@
     border-radius: 12px;
 }
 .profileButton {
-    margin-top: 350px;
+    margin-top: 270px;
     height: 55px;
     width: 45%;
     margin-left: 5%;
@@ -61,10 +84,4 @@
     font-weight: 400;
     margin-top: 10px;
     color: #000000;
-}
-ion-toolbar {
-    --background: #ff3011;
-    height: 117px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
 }

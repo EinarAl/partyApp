@@ -1,59 +1,24 @@
-.msgIcon {
-    height: 35px;
-    width: 35%;
-    margin-left: 23%;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-.txtBar {
-    margin-top: 150%;
-    height: 53px;
-    width: 93%;
-    margin-left: 5%;
-    border-radius: 12px;
-    background-color: #eaeaea;
-}
-.txtSendButton {
-    height: 50px;
-    width: 15%;
-    margin-left: 6%;
-    border-radius: 30px;
-    display: inline-block;
-    background-color: #ff3011;
-    position: absolute;
-}
-.txtSendButtonL {
-    height: 50px;
-    width: 15%;
-    border-radius: 30px;
-    display: inline-block;
-    background-color: #ff3011;
-}
-.txtSendButtonLT {
-    height: 50px;
-    width: 15%;
-    border-radius: 30px;
-    display: inline-block;
-    margin-left: 1%;
-    background-color: #ff3011;
-}
-.txtInput {
-    width: 47%;
-    height: 50px;
-    display: inline-block;
-    --background: #eaeaea;
-    color: #7a7a7a;
-}
-.msgText {
-    color: #7a7a7a;
-}
-.txtBubbles {
-    --background: #eaeaea;
-    border-radius: 12px;
-}
 ion-toolbar {
     --background: #ff3011;
     height: 117px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+}
+#title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+ion-list {
+    background-color: #ffffff;
+}
+ion-list-header {
+    color: #000000;
+}
+ion-item {
+    --background: #ffffff;
+    color: #000000;
+}
+p {
+    color: #7a7a7a
 }

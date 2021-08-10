@@ -1,67 +1,40 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/service-profile"></ion-back-button>
-    </ion-buttons>
     <ion-title id="title">
-      Book Now
+      Booked
     </ion-title>
-    <button [routerLink]="['/profile']" class="toProfileButton"><ion-icon class="profileIcon" name="person-circle-outline"></ion-icon></button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="fillInfo">Location</div>
-  <div class="fillBar">
-    <ion-item class="fillInput">
-      <ion-textarea></ion-textarea>
-    </ion-item>
+  <div class="recommendHeader">
+    08/08/2021
   </div>
-  
-  <div class="fillInfo">Time</div>
-  <div class="timeSpace">
-    <form>
-      <input class="fillTime" type="time"/>
-      <div class="fillTo">To</div>
-      <input class="fillTime" type="time"/>
-    </form>
-    <div class="calendar">
-      <div class="dateMonth"><ion-icon class="dateMonth" name="chevron-back-outline"></ion-icon>Feburary 2021<ion-icon class="dateMonth" name="chevron-forward-outline"></ion-icon></div>
-      <div class="weekDays">Sun</div>
-      <div class="weekDays">Mon</div>
-      <div class="weekDays">Tue</div>
-      <div class="weekDays">Wed</div>
-      <div class="weekDays">Thu</div>
-      <div class="weekDays">Fri</div>
-      <div class="weekDays">Sat</div>
-      <div class="dateNum">1</div>
-      <div class="dateNum">2</div>
-      <div class="dateNum">3</div>
-      <div class="dateNum">4</div>
-      <div class="dateNum">5</div>
-      <div class="dateNum">6</div>
-      <div class="dateNum">7</div>
-      <div class="dateNum">8</div>
-      <div class="dateNum">9</div>
-      <div class="dateNum">10</div>
-      <button class="dateNum highlightNum">12</button>
-      <div class="dateNum">13</div>
-      <div class="dateNum">14</div>
-      <div class="dateNum">15</div>
-      <div class="dateNum">16</div>
-      <div class="dateNum">17</div>
-      <div class="dateNum">18</div>
-      <div class="dateNum">19</div>
-      <div class="dateNum">20</div>
-      <div class="dateNum">21</div>
-      <div class="dateNum">22</div>
-      <div class="dateNum">23</div>
-      <div class="dateNum">24</div>
-      <div class="dateNum">25</div>
-      <div class="dateNum">26</div>
-      <div class="dateNum">27</div>
-      <div class="dateNum dateNumMarginBot">28</div>
-    </div>
-
-    <button class="confirmButton">Confirm</button>
+  <ion-slides>
+    <ion-slide>
+      <ion-card class="recommendCard">
+        <img src="https://bartendersbusiness.com/en/articles/images/w/1200/BartendersBusiness-01222019060923000000-5c46b393188eb.jpg" />
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card [routerLink]="['/service-profile']" class="recommendCard">
+        <img src="https://images.squarespace-cdn.com/content/v1/57bc877fc534a51bf90877bc/1500934065354-F88APZASA688PP9GF69A/booth+5.jpg" />
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <div class="recommendHeader">
+    01/18/2021
   </div>
+  <ion-slides>
+    <ion-slide>
+      <ion-card class="recommendCard">
+        <img src="https://i.ytimg.com/vi/nCIgTn-7y8E/maxresdefault.jpg" />
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="recommendCard">
+        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGhvdG9ncmFwaHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" />
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

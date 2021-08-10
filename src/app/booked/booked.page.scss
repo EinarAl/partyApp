@@ -98,7 +98,7 @@ ion-toolbar {
 .highlightNum {
     background-color: transparent;
 }
-.highlightNum:focus {
+.highlightNum:active {
     background-color: #ff3011;
     height: 19px;
     border-radius: 50px;
@@ -113,6 +113,6 @@ ion-toolbar {
     border-radius: 12px;
     font-size: 20px;
     font-weight: 600;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 28.5%;
 }

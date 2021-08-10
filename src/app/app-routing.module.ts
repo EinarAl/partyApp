@@ -33,6 +33,14 @@ const routes: Routes = [
   {
     path: 'order-review',
     loadChildren: () => import('./order-review/order-review.module').then( m => m.OrderReviewPageModule)
+  },
+  {
+    path: 'direct-messages',
+    loadChildren: () => import('./direct-messages/direct-messages.module').then( m => m.DirectMessagesPageModule)
+  },
+  {
+    path: 'booked',
+    loadChildren: () => import('./booked/booked.module').then( m => m.BookedPageModule)
   }
 ];
 @NgModule({

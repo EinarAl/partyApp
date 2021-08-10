@@ -1,9 +1,62 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>orderReview</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/check-out"></ion-back-button>
+    </ion-buttons>
+    <ion-title id="title">
+      Review
+    </ion-title>
+    <button [routerLink]="['/profile']" class="toProfileButton"><ion-icon class="profileIcon" name="person-circle-outline"></ion-icon></button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="reviewTitle">Order Summary</div>
+  <div class="redbar"></div>
+  <div class="reviewSubTitle">Location:</div>
+  <div class="reviewSubTitle L">Hours:</div>
+  <div class="reviewTxt">Tomato Town, Cheese St, 8080</div>
+  <div class="reviewTxt L">4 hrs</div>
+  <div class="reviewSubTitle">Time:</div>
+  <div class="reviewSubTitle L2">Date:</div>
+  <div class="reviewTxt">4:00 - 8:00</div>
+  <div class="reviewTxt L22">02/12/2021</div>
+  <div class="reviewTitle">Payment Summary</div>
+  <div class="redbar"></div>
+  <div class="reviewSubTitle">Card Number:</div>
+  <div class="reviewSubTitle L3">Name:</div>
+  <div class="reviewTxt">000-000-0000</div>
+  <div class="reviewTxt L32">Murick Ziranda</div>
+  <div class="reviewSubTitle">CVV:</div>
+  <div class="reviewSubTitle L4">Phone Number:</div>
+  <div class="reviewTxt">000</div>
+  <div class="reviewTxt L42">(555) 000-0000</div>
+  <div class="reviewTitle">Final Total</div>
+  <div class="redbar"></div>
+  <div class="reviewSubTitle block">Amount: $200.00</div>
+  <div class="reviewSubTitle block">Fees & Taxes: $20</div>
+  <div class="reviewSubTitle block">Total Owed: $220</div>
+  <button [routerLink]="['/check-out']" class="confirmButton">Confirm</button>
+
+  <!-- <ion-tabs>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button [routerLink]="['/tabs/tab2']">
+        <ion-icon name="chatbubbles-outline"></ion-icon>
+        <ion-label>Messages</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/tabs/tab1']">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/tabs/tab3']">
+        <ion-icon name="cart-outline"></ion-icon>
+        <ion-label>Checkout</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  
+  </ion-tabs> -->
 
 </ion-content>
