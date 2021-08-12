@@ -5,13 +5,17 @@ ion-toolbar {
     border-bottom-right-radius: 30px;
 }
 #title {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
+    position: absolute; 
     margin-top: 10px;
-    position: absolute;
+}
+.logoImg {
+    height: 110px;
+    width: 60%;
 }
 #audioTitle {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
     margin-top: 10px;
     display: none;
@@ -63,8 +67,8 @@ ion-toolbar {
 .toProfileButton {
     margin-left: 80%;
     background-color: #ff3011;
-    height: 40px;
-    width: 13%;
+    height: 60px;
+    width: 20%;
     margin-top: 35px;
     text-align: center;
 }
@@ -73,8 +77,9 @@ ion-toolbar {
     width: 100%;
 }
 #button1:focus {
-    background-color: #ff3011;
+    color: #ff3011;
 }
+
 #audioRecommended {
     display: none;
 }
