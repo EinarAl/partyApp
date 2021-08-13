@@ -18,28 +18,30 @@
 .txtSendButton {
     position: absolute;
     bottom: 5px;
-    height: 50px;
-    width: 15%;
+    height: 39px;
+    width: 11%;
     margin-left: 6%;
     border-radius: 30px;
     display: inline-block;
     background-color: #ff3011;
 }
 .txtSendButtonL {
+    margin-left:10px;
     position: absolute;
     bottom: 5px;
-    height: 50px;
-    width: 15%;
+    height: 39px;
+    width: 11%;
     border-radius: 30px;
     display: inline-block;
     background-color: #ff3011;
 }
 .txtSendButtonLT {
+    margin-left:10px;
     position: absolute;
     bottom: 5px;
-    margin-left: 15%;
-    height: 50px;
-    width: 15%;
+    margin-left: 16%;
+    height: 39px;
+    width: 11%;
     border-radius: 30px;
     display: inline-block;
     background-color: #ff3011;
@@ -56,14 +58,23 @@
 }
 .msgText {
     color: #7a7a7a;
+    padding-top:10px;
+    padding-left: 15px;
 }
 .txtBubbles {
-    --background: #eaeaea;
-    border-radius: 12px;
+    background-color: #eaeaea;
+    width: 100px;
+    margin-left: 70%;
+    vertical-align:middle;
+    height: 50px;
+    border-radius: 8px;
 }
 ion-toolbar {
     --background: #ff3011;
     height: 117px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+}
+#input{
+    margin-top: 9%;
 }

@@ -4,10 +4,13 @@ ion-toolbar {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
+#container{
+    padding-top: 40px;
+}
 #title {
     font-size: 30px;
     font-weight: 600;
-    margin-top: 10px;
+    padding-top:35px;
 }
 .toProfileButton {
     margin-left: 80%;

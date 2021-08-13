@@ -1,23 +1,23 @@
 <ion-header>
   <ion-toolbar>
+    <div id = "container">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title id="title">
       Photo Booth
     </ion-title>
-    <button [routerLink]="['/profile']" class="toProfileButton"><ion-icon class="profileIcon" name="person-circle-outline"></ion-icon></button>
+  </div>
+    <!-- <button [routerLink]="['/profile']" class="toProfileButton"><ion-icon class="profileIcon" name="person-circle-outline"></ion-icon></button> -->
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <!-- <ion-buttons>
-    <ion-back-button defaultHref="/"></ion-back-button>
-  </ion-buttons> -->
+ 
   <img class="profileImg" src="https://images.squarespace-cdn.com/content/v1/57bc877fc534a51bf90877bc/1500934065354-F88APZASA688PP9GF69A/booth+5.jpg"/>
   <div class="profileDescrL">
     <div class="profileTitle">Photo Booth</div>
-    <div class="descrLocation"><ion-icon name="location-outline"></ion-icon>Tomato Town</div>
+    <div class="descrLocation"><ion-icon name="location-outline"></ion-icon>Los Angeles, CA</div>
   </div>
   <div class="profileDescrR">
     <div class="priceTitle">Price Per Hour</div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-booked',
   templateUrl: './booked.page.html',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class BookedPage implements OnInit {
 
   constructor() { }
+
 
   ngOnInit() {
   }

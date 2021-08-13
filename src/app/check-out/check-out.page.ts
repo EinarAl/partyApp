@@ -9,6 +9,7 @@ export class CheckOutPage implements OnInit {
 
   constructor() { }
 
+
   ngOnInit() {
   }
 

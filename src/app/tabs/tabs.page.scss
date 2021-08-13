@@ -1,6 +1,11 @@
-ion-tab-button:focus {
-    color: #ff3011;
-}
-ion-icon:focus {
-    color: #ff3011;
+// ion-tab-button:focus {
+//     color: #ff3011;
+// }
+// ion-icon:focus {
+//     color: #ff3011;
+// }
+ion-tab-button {
+    // Icon and text
+    -–color: grey;
+    --color-selected:#ff3011;
 }
